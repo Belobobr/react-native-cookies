@@ -24,21 +24,21 @@ CookieManager.set({
   path: '/',
   version: '1',
   expiration: '2015-05-30T12:30:00.00-05:00'
-}, (err, res) => {
+}, (res, err) => {
   console.log('cookie set!');
   console.log(err);
   console.log(res);
 });
 
 // list cookies
-CookieManager.getAll((err, res) => {
+CookieManager.getAll((res, err) => {
   console.log('cookies!');
   console.log(err);
   console.log(res);
 });
 
 // clear cookies
-CookieManager.clearAll((err, res) => {
+CookieManager.clearAll((res, err) => {
   console.log('cookies cleared!');
   console.log(err);
   console.log(res);
